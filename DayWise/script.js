@@ -32,7 +32,7 @@ switch (day) {
         console.log("I ordered a Oppo Reno 5");
         break;
     default:
-        console.log("Invalid");
+        console.log("Invalid Credentials");
         
 }
 
