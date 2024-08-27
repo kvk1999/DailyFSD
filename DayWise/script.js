@@ -94,3 +94,41 @@ console.log(arr);
 
 const retSlic = arr.slice(1,3)
 console.log(retSlic);
+//object.keys() and object.values()
+let keys=Object.keys(student);
+let values=Object.values(student);
+console.log(keys);
+console.log(values);
+
+//Iteration over JSON
+let jsonData = [{
+    name: "Kalki",
+    age: 20,
+    city: "tirupati"
+  },
+  {
+    name: "santhosh",
+    age: 28,
+    city: "salem"
+  },
+  {
+    name: "babu",
+    age: 30,
+    city: "karaikudi"
+  }]
+  jsonData.forEach((i,j)=>{
+    console.log(i.name);
+    console.log(i.age);
+    console.log(i.city);    
+})
+
+let results = jsonData.map((i, j) => {
+    if (i.age > 25) { 
+        console.log(i.name);
+        console.log(i.age);
+        console.log(i.city);
+        return { name: i.name, age: i.age, city: i.city }; 
+    }
+    return null; 
+})
+console.log(results);
